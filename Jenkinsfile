@@ -35,6 +35,10 @@ credentialsId: "$credentials_id" ,
 url: "$git_url"
 }
 }
+withAws(credentials: 'aws-credentials') {
+   sh 'env'
+   sh 'aws sts get-caller-identity'
+}
 stage('install_deps') {
 steps {
 sh "sudo apt install wget zip python-pip -y"
