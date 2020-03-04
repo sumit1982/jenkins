@@ -1,4 +1,4 @@
-###Jenkinsfile###
+//Jenkinsfile
 import groovy.json.JsonOutput
 //git env vars
 env.git_url = 'https://sumitroop@bitbucket.org/sumitroop/jenkins.git'
