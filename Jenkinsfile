@@ -35,12 +35,15 @@ credentialsId: "$credentials_id" ,
 url: "$git_url"
 }
 }
-withAws(credentials: 'aws-credentials') {
-   sh 'env'
-   sh 'aws sts get-caller-identity'
-}
+//withAws(credentials: 'aws-credentials') {
+//   sh 'env'
+//   sh 'aws sts get-caller-identity'
+//}
 stage('install_deps') {
+withAws(credentials: 'aws-credentials') 
 steps {
+sh 'env'
+sh 'aws sts get-caller-identity'    
 sh "sudo apt install wget zip python-pip -y"
 sh "cd /tmp"
 sh "curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb"
