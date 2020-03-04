@@ -39,8 +39,9 @@ url: "$git_url"
 //   sh 'env'
 //   sh 'aws sts get-caller-identity'
 //}
+withAws(credentials: 'aws-credentials')
 stage('install_deps') {
-withAws(credentials: 'aws-credentials') 
+//withAws(credentials: 'aws-credentials') 
 steps {
 sh 'env'
 sh 'aws sts get-caller-identity'    
