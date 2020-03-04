@@ -77,4 +77,4 @@ post {
   always { 
     cleanWs()
    }
-  },
+   }
