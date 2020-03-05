@@ -9,7 +9,7 @@ env.slack_url = 'https://inquisitivemind.slack.com/services/BU5CGM6EL'
 env.notification_channel = 'devops'
 //jenkins env vars
 env.jenkins_server_url = 'http://35.200.254.36:8080/'
-env.jenkins_node_custom_workspace_path = "/var/jenkins_home/${JOB_NAME}/workspace"
+env.jenkins_node_custom_workspace_path = "/jenkins_home/${JOB_NAME}/workspace"
 env.jenkins_node_label = 'master'
 env.terraform_version = '0.12.21'
 def notifySlack(text, channel, attachments) {
