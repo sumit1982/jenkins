@@ -31,7 +31,7 @@ stages {
 stage('fetch_latest_code') {
 steps {
 git branch: "$git_branch" ,
-credentialsId: "$credentials_id" ,
+//credentialsId: "$credentials_id" ,
 url: "$git_url"
 }
 }
