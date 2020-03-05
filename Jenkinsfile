@@ -28,13 +28,13 @@ label "$jenkins_node_label"
 } 
 }
 stages {
-stage('fetch_latest_code') {
-steps {
-git branch: "$git_branch" ,
+//stage('fetch_latest_code') {
+//steps {
+//git branch: "$git_branch" ,
 //credentialsId: "$credentials_id" ,
-url: "$git_url"
-}
-}
+//url: "$git_url"
+//}
+//}
 stage('install_deps') {
 //withAws(credentials: 'aws-credentials') 
 steps {
