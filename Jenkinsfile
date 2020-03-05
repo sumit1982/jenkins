@@ -35,11 +35,6 @@ git branch: "$git_branch" ,
 url: "$git_url"
 }
 }
-//withAws(credentials: 'aws-credentials') {
-//   sh 'env'
-//   sh 'aws sts get-caller-identity'
-//}
-//withAws(credentials: 'aws-credentials')
 stage('install_deps') {
 //withAws(credentials: 'aws-credentials') 
 steps {
