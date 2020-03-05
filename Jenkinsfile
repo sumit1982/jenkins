@@ -1,7 +1,7 @@
 //Jenkinsfile
 import groovy.json.JsonOutput
 //git env vars
-env.git_url = 'https://sumitroop@bitbucket.org/sumitroop/jenkins_iam.git'
+env.git_url = 'https://github.com/sumit1982/jenkins.git'
 env.git_branch = 'master'
 //env.credentials_id = '1'
 //slack env vars
