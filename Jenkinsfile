@@ -1,8 +1,8 @@
 //Jenkinsfile
 import groovy.json.JsonOutput
 //git env vars
-env.git_url = 'https://sumitroop@bitbucket.org/sumitroop/jenkins_iam.git'
-env.git_branch = 'master'
+//env.git_url = 'https://sumitroop@bitbucket.org/sumitroop/jenkins_iam.git'
+//env.git_branch = 'master'
 //env.credentials_id = '1'
 //slack env vars
 env.slack_url = 'https://inquisitivemind.slack.com/services/BU5CGM6EL'
@@ -28,13 +28,13 @@ label "$jenkins_node_label"
 } 
 }
 stages {
-stage('fetch_latest_code') {
-steps {
-git branch: "$git_branch" ,
+//stage('fetch_latest_code') {
+//steps {
+//git branch: "$git_branch" ,
 //credentialsId: "$credentials_id" ,
-url: "$git_url"
-}
-}
+//url: "$git_url"
+//}
+//}
 //withAws(credentials: 'aws-credentials') {
 //   sh 'env'
 //   sh 'aws sts get-caller-identity'
