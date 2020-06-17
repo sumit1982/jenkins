@@ -8,7 +8,7 @@ provider "aws" {
 module "iam_user" {
   source = "../../modules/iam-user"
 
-  name          = "sharmaa2"
+  name          = "sharmaa222"
   force_destroy = true
 
   # User "sumitroopchandani" has uploaded his public key here - https://keybase.io/test/pgp_keys.asc
