@@ -40,6 +40,6 @@ resource "aws_iam_user_ssh_key" "this" {
 resource "aws_iam_user_policy_attachment" "this" {
   count = var.create_user ? 1 : 0
   user       = aws_iam_user.this[0].name
-  policy_arn = "arn:aws:iam::640303284234:policy/assume_role_test"
+  policy_arn = "arn:aws:iam::640303284234:policy/assume_role_testing"
 }
 
